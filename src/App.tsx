@@ -1,13 +1,7 @@
-import "./App.css";
-import { Map } from "./components/Map/Map";
+import { MapPage } from "./pages/MapPage/MapPage";
 
 function App() {
-  return (
-    <>
-      <div>Privet</div>
-      <Map />
-    </>
-  );
+  return <MapPage />;
 }
 
 export default App;
