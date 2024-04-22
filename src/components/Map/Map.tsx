@@ -23,6 +23,9 @@ export const Map = () => {
             center: [55.60828, 37.409761],
             zoom: 18,
           }}
+          defaultOptions={{
+            restrictMapArea: true,
+          }}
         >
           <Polygon
             geometry={[
@@ -36,13 +39,12 @@ export const Map = () => {
           />
           <Placemark
             geometry={[55.608378, 37.408336]}
-            modules={["geoObject.addon.balloon"]}
             properties={{
-              //hintContent: "<b>Я появляюсь при наведении на метку </b>",
-              //balloonContentBody: `<span>ehehe</span>`,
+              iconContent: "10",
             }}
             options={{
-              iconImageSize: [100, 100],
+              preset: "islands#circleIcon",
+              //iconImageSize: [48, 48],
             }}
             onClick={() => setVisible(true)}
           />
