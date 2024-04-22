@@ -1,4 +1,4 @@
-import Map from "../../components/Map/Map";
+import { Map } from "../../components/Map";
 import styles from "./MapPage.module.scss";
 
 export const MapPage = () => {

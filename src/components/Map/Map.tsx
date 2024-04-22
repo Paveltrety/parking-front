@@ -6,7 +6,7 @@ import {
 } from "@pbe/react-yandex-maps";
 
 import { useState } from "react";
-import { Modal } from "../Modal/Modal";
+import { Modal } from "../Modal";
 
 import styles from "./Map.module.scss";
 
@@ -44,7 +44,6 @@ export const Map = () => {
             }}
             options={{
               preset: "islands#circleIcon",
-              //iconImageSize: [48, 48],
             }}
             onClick={() => setVisible(true)}
           />
@@ -56,5 +55,3 @@ export const Map = () => {
     </div>
   );
 };
-
-export default Map;
