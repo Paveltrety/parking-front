@@ -7,6 +7,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useNavigate } from "react-router-dom";
 import { LOCAL_STORAGE_KEY } from "../../constants/auth";
 import { useEffect, useState } from "react";
+import { routesLink } from "../../constants/routes";
 
 export interface IForm {
   login: string;
@@ -39,7 +40,7 @@ export const LoginForm = () => {
   const onSubmit = ({ login, password }: IForm) => {
     if (login === "admin" && password === "admin") {
       localStorage.setItem(LOCAL_STORAGE_KEY, "random_key");
-      navigate("/");
+      navigate(routesLink.home);
     } else {
       setAuthError("Вы ввели неверный логин или пароль");
     }

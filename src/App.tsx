@@ -5,12 +5,13 @@ import { LoginPage } from "./pages/LoginPage/LoginPage";
 
 import "@/styles/style.scss";
 import { PublicLayout } from "./components/PublicLayout";
+import { routesLink } from "./constants/routes";
 
 function App() {
   return (
     <Routes>
       <Route
-        path="/"
+        path={routesLink.home}
         element={
           <PrivateLayout>
             <MapPage />
@@ -19,7 +20,7 @@ function App() {
       />
 
       <Route
-        path="/login"
+        path={routesLink.login}
         element={
           <PublicLayout>
             <LoginPage />
