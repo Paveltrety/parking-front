@@ -39,7 +39,7 @@ export const LoginForm = () => {
   const onSubmit = ({ login, password }: IForm) => {
     if (login === "admin" && password === "admin") {
       localStorage.setItem(LOCAL_STORAGE_KEY, "random_key");
-      navigate("/parking-front");
+      navigate("/");
     } else {
       setAuthError("Вы ввели неверный логин или пароль");
     }

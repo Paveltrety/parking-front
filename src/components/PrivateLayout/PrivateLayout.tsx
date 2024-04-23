@@ -9,5 +9,5 @@ interface IPrivateLayoutProps {
 export const PrivateLayout: FC<IPrivateLayoutProps> = ({ children }) => {
   const isAuth = localStorage.getItem(LOCAL_STORAGE_KEY);
 
-  return isAuth ? children : <Navigate to={"/parking-front/login"} />;
+  return isAuth ? children : <Navigate to={"/login"} />;
 };

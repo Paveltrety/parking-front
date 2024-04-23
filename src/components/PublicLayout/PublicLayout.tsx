@@ -9,5 +9,5 @@ interface PublicLayoutProps {
 export const PublicLayout: FC<PublicLayoutProps> = ({ children }) => {
   const isAuth = localStorage.getItem(LOCAL_STORAGE_KEY);
 
-  return isAuth ? <Navigate to={"/parking-front"} /> : children;
+  return isAuth ? <Navigate to={"/"} /> : children;
 };

@@ -10,7 +10,7 @@ function App() {
   return (
     <Routes>
       <Route
-        path="/parking-front"
+        path="/"
         element={
           <PrivateLayout>
             <MapPage />
@@ -19,7 +19,7 @@ function App() {
       />
 
       <Route
-        path="/parking-front/login"
+        path="/login"
         element={
           <PublicLayout>
             <LoginPage />
